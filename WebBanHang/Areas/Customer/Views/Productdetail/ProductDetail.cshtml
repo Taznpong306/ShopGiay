@@ -1,0 +1,22 @@
+﻿@model WebBanHang.Models.Product
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="product-detail">
+               <div class="product-image">
+            <img src="/@Model.ImageUrl" />
+        </div>
+        <div class="product-info">
+            <h3>@Model.Name</h3>
+            <p><strong>ID:</strong> @Model.Id</p>
+            <p><strong>Price:</strong> @Model.Price.ToString("C")</p>
+        </div>
+    </div>
+</body>
+</html>
